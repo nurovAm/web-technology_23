@@ -8,39 +8,27 @@
 	<title>Веб-разработчик Нуров А.Т</title>
 </head>
 
-<body>
-	<header class="header">
-		<div class="container">
-			<div class="nav">
-				<nav class="main-menu">
-					<a href="#about">Обо мне</a>
-					<a href="#skills">Навыки</a>
-					<a href="#tecnologies">Технологии</a>
-
-				</nav>
+<body
+	style="background-image:url(./Файлы/fonovoe-izobrazhenie-dlia-avtorizatsii-1.webp); background-repeat: no-repeat; background-size: cover;">
+	<div class='singup'>
+		<a href="index.html" class="singup__back">Назад</a>
+		<form class="form-container" action="https://httpbin.org/post" method="POST">
+			<div class="form-title">
+				<h2>Sign up</h2>
 			</div>
-			<div class="text-center py-5">
-				<h1 class="name">Нуров Амир Тахирович</h1>
-				<h2>Веб-разработчик</h2>
-				<p class="w-50 my-3 mx-auto">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita reprehenderit, quasi assumenda,
-					voluptatum
-					praesentium molestiae dignissimos eius soluta deserunt quam eum dolores necessitatibus laudantium itaque!
-					Necessitatibus molestiae sed minus reiciendis? Culpa corrupti officiis sint nemo recusandae voluptatem
-					voluptatibus numquam eum eligendi optio excepturi, ullam soluta libero magni doloribus ex nesciunt?
-				</p>
-				<a href="mailto:nurovamir@gmail.com" class="btn contact-me-btn">Написать мне</a>
+			<label class="form-title" for="name">Name</label>
+			<input class="form-field" type="text" name="firstname" id="name" /><br />
+			<label class="form-title" for="email">Email</label>
+			<input class="form-field" type="text" name="email" id="email" /><br />
+			<label class="form-title" for="password">Password</label>
+			<input class="form-field" type="password" name="passworsd" id="password" /><br />
+			<input type="checkbox" id="remember">
+			<label for="remember" class="remember">Remember me</label>
+			<div class="submit-container">
+				<input class="submit-button" type="submit" value="Submit" />
 			</div>
-		</div>
-	</header>
-	<main>
-		<section class="authorization">
-			<div class="container">
-				<h1>Авторизироваться</h1>
-				
-			</div>
-		</section>
-	</main>
+		</form>
+	</div>
 </body>
 
 </html>
