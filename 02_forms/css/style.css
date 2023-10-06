@@ -256,3 +256,121 @@ body {
 .remember {
 	color: #fff;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.return {
+	background: #fff;
+	margin: 100px auto;
+	width: 400px;
+	padding: 50px;
+	box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+}
+
+
+.return h1 {
+	font-weight: 300;
+	text-align: center;
+}
+
+
+.return .return_text {
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	font-size: 18px;
+	border: none;
+	border-bottom: 1px solid #757575;
+	margin-bottom: 40px;
+
+}
+
+.return .return_text:focus {
+	outline: none;
+}
+
+
+.return .label-box {
+	position: relative;
+}
+
+
+.return label {
+	position: absolute;
+	top: -66px;
+	font-size: 16px;
+	transition: 0.2s ease all;
+	pointer-events: none;
+}
+
+
+.return .return_text:focus~.label-box label,
+.return_text:valid~.label-box label {
+	font-size: 14px;
+	transform: translateY(-35px);
+	color: rgba(52, 152, 219, .7);
+
+}
+
+.return .btn {
+	border: none;
+	color: #fff;
+	background: rgba(52, 152, 219, .7);
+	box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+	transition: 0.2s;
+}
+
+.return .btn:hover {
+	cursor: pointer;
+	background-color: #fff;
+	border-color: rgba(52, 152, 219, .7);
+	color: rgba(52, 152, 219, .7)
+}
+
+
+.label-box::before,
+.label-box::after {
+	content: '';
+	position: absolute;
+	height: 2px;
+	width: 0;
+	bottom: 40px;
+	background-color: rgba(52, 152, 219, .7);
+	transition: all .3s;
+}
+
+
+.label-box::before {
+	left: 50%;
+}
+
+
+.label-box::after {
+	right: 50%
+}
+
+
+.return .return_text:focus~.label-box::before,
+.return .return_text:focus~.label-box::after {
+	width: 50%;
+}
+
+.return textarea {
+	width: 100%;
+	height: 300px;
+}
+
+.agreement-label {
+	position: static !important;
+	top: 0 !important;
+}
